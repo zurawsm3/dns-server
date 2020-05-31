@@ -16,10 +16,10 @@ Project contain examples of configuration files, include mail configuration for 
 > docker-compose
 
 ### How add new domain?
-In *./named.conf.local* file add new zone for new domain. We create it based on provided examples
-In *./named/* directory add new configuration file. It can be created based on provided examples. Files names must end with *.conf*
-You can check are configurations are valid by *docker exec dns named-checkconf /etc/bind/named.conf* command
-Don't forget to restart container *docker restart dns*
+In *./named.conf.local* file add new zone for new domain. We create it based on provided examples <br />
+In *./named/* directory add new configuration file. It can be created based on provided examples. Files names must end with *.conf* <br />
+You can check are configurations are valid by *docker exec dns named-checkconf /etc/bind/named.conf* command <br />
+Don't forget to restart container *docker restart dns* <br />
 
 
 
