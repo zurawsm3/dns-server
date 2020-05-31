@@ -1,0 +1,7 @@
+zone "MY.DOMAIN" IN {
+    type master;
+    allow-transfer {none;};
+    file "/var/named/dns.MY.DOMAIN.conf";
+};
+
+

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  dns:
+    build: ./build
+    image: dns_rpi:latest
+    container_name: dns
+    restart: always
+    ports:
+      - "53:53/udp"
+      - "53:53/tcp"
+    volumes:
+      - ./named:/var/named
+      - ./named.conf.local:/etc/bind/named.conf.local
+      - ./named.conf.options:/etc/bind/named.conf.options
